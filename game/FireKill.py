@@ -670,15 +670,15 @@ while running:
         screen.blit(music_text, (10, 170))
 
         if lives >= 3:
-            screen.blit(h3, (0, 130))
+            screen.blit(h3, (0, 170))
         elif lives == 2:
-            screen.blit(h2, (0, 130))
+            screen.blit(h2, (0, 170))
         elif lives == 1:
-            screen.blit(h1, (0, 130))
+            screen.blit(h1, (0, 170))
 
         if lives > 3:
             extra_text = font.render(f'+{lives - 3}', True, (0, 255, 0))
-            screen.blit(extra_text, (140, 160))
+            screen.blit(extra_text, (140, 200))
 
     else:
         # Вычисляем время игры только если игра окончена
